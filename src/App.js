@@ -10,7 +10,7 @@ const App = () => {
   const [icon, seticon] = useState("");
 
   const findWeather=async()=>{
-    const apiKey="";
+    const apiKey="Enter your openweather api";
     const unit="metric";
     const url="https://api.openweathermap.org/data/2.5/weather?q="+input+"&appid="+apiKey+"&units="+unit;
     const response=await axios.get(url);
